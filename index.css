@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Playfair&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+    /* font-family: 'Playfair', serif; */
+    background-color: rgb(0, 0, 0);
+}
+
+.title {
+    font-size: 1.6cm;
+    background: linear-gradient(113.3deg, rgb(134, 209, 228) -1.8%, rgb(60, 80, 115) 86.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.border {
+    text-align: center;
+    border: black solid 0.5px;
+    margin: 6rem;
+    background: linear-gradient(113.3deg, rgba(45, 84, 94, 0.815) -1.8%, rgba(2, 2, 2, 0.781) 86.4%);
+    border-radius: 25px;
+}
+
+.friend{
+    background: linear-gradient(113.3deg, rgb(134, 209, 228) -1.8%, rgb(60, 80, 115) 86.4%);
+    border-radius: 25px;
+    margin: 1rem;
+    display: flex;
+    font-size: large;
+}
+
+.friend:hover {
+    background: linear-gradient(113.3deg, rgba(134, 209, 228, 0.719) -1.8%, rgba(60, 80, 115, 0.678) 86.4%);
+}
+
+.image{
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.name-age-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.removeBtn {
+    border: none;
+    background: linear-gradient(113.3deg, rgb(134, 209, 228) -1.8%, rgb(60, 80, 115) 86.4%);
+    border-radius: 25px;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1cm;
+    transition: all 1s ease;
+    font-family: 'Libre Baskerville', serif;
+    cursor: pointer;
+}
+
+.removeBtn:hover {
+    transform: scale(1.1);    
+    background: linear-gradient(113.3deg, rgba(134, 209, 228, 0.719) -1.8%, rgba(60, 80, 115, 0.678) 86.4%);
+}
+
+.newFriendName,
+.newFriendAge {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: large;
+    background-color: transparent;
+    border-radius: 25px;
+}
+
+.newFriendName:focus,
+.newFriendAge:focus {
+    background-color: white;
+}
